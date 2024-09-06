@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Saúde</title>
+    <style>
+        /* Reset básico de estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2b85b2;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .banner {
+            background-image: url('img/Apresentação1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .banner h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .description {
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .description p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .specialties,
+        .team,
+        .plans,
+        .contact {
+            margin-bottom: 40px;
+        }
+
+        .specialties h2,
+        .team h2,
+        .plans h2,
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2b85b2;
+        }
+
+        .specialties ul,
+        .team ul,
+        .plans ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .specialties ul li,
+        .team ul li,
+        .plans ul li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .contact p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Responsividade para tablets */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            .banner h2 {
+                font-size: 36px;
+            }
+
+            .description p {
+                font-size: 18px;
+            }
+
+            .specialties ul li,
+            .team ul li,
+            .plans ul li {
+                font-size: 16px;
+            }
+
+            .contact p {
+                font-size: 16px;
+            }
+
+            .container {
+                width: 90%;
+            }
+        }
+
+        /* Responsividade para smartphones */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            header p {
+                font-size: 14px;
+            }
+
+            .banner {
+                height: 300px;
+            }
+
+            .banner h2 {
+                font-size: 24px;
+            }
+
+            .description p {
+                font-size: 16px;
+            }
+
+            .specialties ul li,
+            .team ul li,
+            .plans ul li {
+                font-size: 14px;
+            }
+
+            .contact p {
+                font-size: 14px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo à Clínica de Saúde</h1>
+        <p>Sua saúde em boas mãos</p>
+    </header>
+
+    <nav>
+        <a href="#specialties">Especialidades</a>
+        <a href="#team">Equipe Médica</a>
+        <a href="#plans">Planos de Saúde</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <section class="banner">
+        <h2>Cuidando da sua saúde com excelência</h2>
+    </section>
+
+    <section class="description container">
+        <p>Na Clínica de Saúde, nossa missão é proporcionar atendimento médico de excelência, com foco no bem-estar e na qualidade de vida de nossos pacientes. Nossa equipe altamente qualificada está pronta para oferecer cuidado humanizado e integral, atendendo às suas necessidades de saúde de maneira personalizada.</p>
+        <p>Contamos com especialistas nas áreas de clínica geral, pediatria, ginecologia, ortopedia e nutrição, prontos para fornecer o melhor diagnóstico e tratamento, sempre com o compromisso de garantir a sua tranquilidade e recuperação. Venha conhecer nossa estrutura moderna, equipada para oferecer o melhor cuidado em saúde.</p>
+        <p>Além de consultas, a clínica oferece exames laboratoriais e de imagem para maior comodidade e precisão no diagnóstico.</p>
+    </section>
+
+    <section id="specialties" class="specialties container">
+        <h2>Nossas Especialidades</h2>
+        <ul>
+            <li>Clínica Geral</li>
+            <li>Pediatria</li>
+            <li>Ginecologia</li>
+            <li>Ortopedia</li>
+            <li>Nutrição</li>
+        </ul>
+    </section>
+
+    <section id="team" class="team container">
+        <h2>Equipe Médica</h2>
+        <ul>
+            <li>Dr. Mário Quitanda – Clínico geral</li>
+            <li>Dr. Monteiro Lobato – Ortopedista</li>
+            <li>Dra. Maria Cristina – Ginecologista</li>
+            <li>Dr. Carlos Alberto – Pediatra</li>
+            <li>Dra. Cássia Moura – Nutricionista</li>
+        </ul>
+    </section>
+
+    <section id="plans" class="plans container">
+        <h2>Planos de Saúde Credenciados</h2>
+        <ul>
+            <li>Amil</li>
+            <li>Golden Cross</li>
+            <li>Unimed</li>
+            <li>Bradesco Saúde</li>
+            <li>SIS</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact container">
+        <h2>Entre em Contato</h2>
+        <p>Telefone: (61) 9999-9999 | Email: contato@clinicadesaude.com.br</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clínica de Saúde - Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
